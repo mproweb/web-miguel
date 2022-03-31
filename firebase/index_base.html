@@ -3,4 +3,28 @@
       ".read": false,
       ".write": false
     }
-  }
+  }    <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBxkHBHrWRxmwabrV15OEMyoECkFp8P0A0",
+      authDomain: "curriculum-miguel.firebaseapp.com",
+      projectId: "curriculum-miguel",
+      storageBucket: "curriculum-miguel.appspot.com",
+      messagingSenderId: "243202922414",
+      appId: "1:243202922414:web:c9eed3a445ba177b425a3f",
+      measurementId: "G-SM7EPZYGRK"
+    };
+  
+    // Initialize Firebase
+    //firebase.initializeApp(firebaseConfi);
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    
+  </script>
